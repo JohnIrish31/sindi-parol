@@ -1,0 +1,54 @@
+@keyframes drop-in {
+  0% { transform: translateY(-260%) scale(1.15); opacity: 0; }
+  55% { transform: translateY(6%) scale(.96); opacity: 1; }
+  75% { transform: translateY(-4%) scale(1.02); }
+  100% { transform: translateY(0) scale(1); opacity: 1; }
+}
+@keyframes bloom {
+  0% { transform: scale(.15); opacity: 1; }
+  100% { transform: scale(1); opacity: 0; }
+}
+@keyframes relight {
+  0% { filter: brightness(2.4) saturate(1.6); transform: scale(1.14); }
+  100% { filter: none; transform: none; }
+}
+@keyframes ash-puff {
+  0% { transform: scale(1.1); filter: brightness(1.8); }
+  30% { transform: translateX(-3px); }
+  60% { transform: translateX(3px); }
+  100% { transform: none; filter: none; }
+}
+@keyframes pulse-glow { 0%, 100% { box-shadow: 0 0 0 3px var(--c), 0 0 8px var(--c); } 50% { box-shadow: 0 0 0 3px var(--c), 0 0 24px var(--c); } }
+@keyframes twinkle { 0%, 100% { opacity: .3; transform: scale(.8); } 50% { opacity: 1; transform: scale(1.15); } }
+@keyframes sway { 0%, 100% { transform: translateX(-6px); } 50% { transform: translateX(6px); } }
+@keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
+@keyframes swing { 0%, 100% { transform: rotate(-4deg); } 50% { transform: rotate(4deg); } }
+@keyframes pop { 0% { transform: scale(.3); opacity: 0; } 70% { transform: scale(1.12); opacity: 1; } 100% { transform: scale(1); } }
+@keyframes bump { 0% { transform: scale(1); } 40% { transform: scale(1.35); } 100% { transform: scale(1); } }
+@keyframes fade-in { from { opacity: 0; } to { opacity: 1; } }
+@keyframes slide-up { from { transform: translateY(24px); opacity: 0; } to { transform: none; opacity: 1; } }
+@keyframes shake-x { 0%, 100% { transform: translateX(0); } 25% { transform: translateX(-7px); } 75% { transform: translateX(7px); } }
+@keyframes confetti-fall { to { transform: translate3d(var(--drift), 110vh, 0) rotate(var(--rot)); } }
+
+.anim-drop-in { animation: drop-in .55s cubic-bezier(.3, .7, .4, 1) both; z-index: 6; }
+.anim-bloom { animation: bloom .7s ease-out both; }
+.anim-relight { animation: relight .55s ease-out; }
+.anim-ash-puff { animation: ash-puff .5s ease-in-out; }
+.anim-pulse-glow { animation: pulse-glow 1.6s ease-in-out infinite; }
+.anim-twinkle { animation: twinkle 2.4s ease-in-out infinite; }
+.anim-sway { animation: sway 3s ease-in-out infinite; }
+.anim-float { animation: float 2.6s ease-in-out infinite; }
+.anim-swing { animation: swing 3s ease-in-out infinite; transform-origin: top center; }
+.anim-pop { animation: pop .4s ease-out both; }
+.anim-bump { animation: bump .35s ease-out; }
+.anim-fade-in { animation: fade-in .3s ease-out both; }
+.anim-slide-up { animation: slide-up .35s ease-out both; }
+.anim-shake-x { animation: shake-x .3s ease-in-out; }
+
+.confetti-layer { position: fixed; inset: 0; pointer-events: none; overflow: hidden; z-index: 50; }
+.confetti-piece { position: absolute; top: -24px; left: var(--x); width: var(--w); height: var(--h); background: var(--c); border-radius: var(--r); animation: confetti-fall var(--d) linear var(--delay) forwards; }
+
+@media (prefers-reduced-motion: reduce) {
+  .anim-pulse-glow, .anim-twinkle, .anim-sway, .anim-float, .anim-swing { animation: none; }
+  .confetti-layer { display: none; }
+}

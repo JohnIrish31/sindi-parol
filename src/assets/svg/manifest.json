@@ -1,0 +1,72 @@
+{
+  "parols": {
+    "parol-pula": "parols/parol-pula.svg",
+    "parol-big-pula": "parols/parol-big-pula.svg",
+    "parol-asul": "parols/parol-asul.svg",
+    "parol-big-asul": "parols/parol-big-asul.svg",
+    "parol-berde": "parols/parol-berde.svg",
+    "parol-big-berde": "parols/parol-big-berde.svg",
+    "parol-kahel": "parols/parol-kahel.svg",
+    "parol-big-kahel": "parols/parol-big-kahel.svg",
+    "parol-unlit": "parols/parol-unlit.svg"
+  },
+  "cells": {
+    "dark": "cells/dark.svg",
+    "pista": "cells/pista.svg",
+    "target": "cells/target.svg",
+    "ash": "cells/ash.svg",
+    "ash-pista": "cells/ash-pista.svg",
+    "lit-pula": "cells/lit-pula.svg",
+    "lit-pista-pula": "cells/lit-pista-pula.svg",
+    "lit-asul": "cells/lit-asul.svg",
+    "lit-pista-asul": "cells/lit-pista-asul.svg",
+    "lit-berde": "cells/lit-berde.svg",
+    "lit-pista-berde": "cells/lit-pista-berde.svg",
+    "lit-kahel": "cells/lit-kahel.svg",
+    "lit-pista-kahel": "cells/lit-pista-kahel.svg"
+  },
+  "board": {
+    "frame": "board/frame.svg"
+  },
+  "fx": {
+    "glow-pula": "fx/glow-pula.svg",
+    "glow-asul": "fx/glow-asul.svg",
+    "glow-berde": "fx/glow-berde.svg",
+    "glow-kahel": "fx/glow-kahel.svg",
+    "preview-plus": "fx/preview-plus.svg",
+    "preview-3x3": "fx/preview-3x3.svg",
+    "sparkle": "fx/sparkle.svg"
+  },
+  "players": {
+    "token-pula": "players/token-pula.svg",
+    "token-asul": "players/token-asul.svg",
+    "token-berde": "players/token-berde.svg",
+    "token-kahel": "players/token-kahel.svg"
+  },
+  "icons": {
+    "sound-on": "icons/sound-on.svg",
+    "sound-off": "icons/sound-off.svg",
+    "rules": "icons/rules.svg",
+    "trophy": "icons/trophy.svg",
+    "crown": "icons/crown.svg",
+    "robot": "icons/robot.svg",
+    "players": "icons/players.svg",
+    "restart": "icons/restart.svg",
+    "home": "icons/home.svg",
+    "ash": "icons/ash.svg",
+    "pista": "icons/pista.svg",
+    "malaking-parol": "icons/malaking-parol.svg",
+    "turn": "icons/turn.svg",
+    "check": "icons/check.svg"
+  },
+  "decor": {
+    "bg-night": "decor/bg-night.svg",
+    "bg-stars": "decor/bg-stars.svg",
+    "banderitas-tile": "decor/banderitas-tile.svg",
+    "banderitas": "decor/banderitas.svg"
+  },
+  "scenes": {
+    "logo": "scenes/logo.svg",
+    "hero-baryo": "scenes/hero-baryo.svg"
+  }
+}
